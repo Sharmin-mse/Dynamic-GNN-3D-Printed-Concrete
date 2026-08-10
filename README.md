@@ -1,9 +1,6 @@
 # Physics-Guided Dynamic GNN for 3D-Printed Concrete
 
-This repository provides the implementation of the group-node
-physics-guided graph neural network (PGNN) and dynamic model-updating
-framework developed for predicting the compressive strength of
-3D-printed concrete.
+This repository provides the implementation of the group-node physics-guided graph neural network (PGNN) and dynamic model-updating framework developed for predicting the compressive strength of 3D-printed concrete.
 
 ## Repository Contents
 
@@ -27,12 +24,12 @@ framework developed for predicting the compressive strength of
   - Group-node PGNN model weights after dynamic updating.
 
 - `example_data/input_data_template.csv`
-  - Example template showing the required input-data format.
+  - Template showing the required input-data format.
 
 - `requirements.txt`
   - Python packages required to run the notebooks.
 
-# Model architecture
+## Model Architecture
 
 The group-node PGNN uses:
 
@@ -46,27 +43,27 @@ The group-node PGNN uses:
 - Validation-RMSE-based early stopping
 - Random seed = 42
 
-# Dynamic updating workflow
+## Dynamic Updating Workflow
 
-1. Train the general group-node PGNN using the RILEM database.
+1. Train the general group-node PGNN using the RILEM TC 304-ADC database.
 2. Save the pre-trained model weights and preprocessing parameters.
 3. Load the same pre-trained model for a new dataset.
-4. Evaluate the model without updating as a benchmark.
+4. Evaluate the pre-trained model without updating as a benchmark.
 5. Use 20% of the new dataset to update the pre-trained model.
 6. Evaluate the updated model using the remaining 80% of the new dataset.
 
-# Installation
+## Installation
 
 Install the required Python packages using:
 
 pip install -r requirements.txt
 
-# Data format
+## Data format
 
 The new dataset should contain the same input variables used during
 pre-training. An example is provided in "example_data/input_data_template.csv".
 
-# Citation
+## Citation
 
 If you use this code or the pre-trained model, please cite the associated article:
 
