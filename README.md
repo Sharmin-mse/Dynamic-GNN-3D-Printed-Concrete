@@ -5,32 +5,32 @@ physics-guided graph neural network (PGNN) and dynamic model-updating
 framework developed for predicting the compressive strength of
 3D-printed concrete.
 
-# Repository contents
+## Repository Contents
 
-- "01_Pretrain_Group_Node_PGNN.ipynb"
-         - Trains the group-node PGNN using the RILEM TC 304-ADC database.
-         - Saves the best pre-trained model based on validation RMSE.
+- `01_Pretrain_Group_Node_PGNN.ipynb`
+  - Trains the group-node PGNN using the RILEM TC 304-ADC database.
+  - Saves the best pre-trained model based on validation RMSE.
 
-- "02_Dynamic_Update_Group_Node_PGNN.ipynb"
-         - Loads the pre-trained group-node PGNN.
-         - Evaluates the pre-trained model on the ASU dataset without updating.
-         - Uses 20% of the ASU dataset for dynamic model updating.
-         - Evaluates the updated model on the remaining 80% of the ASU dataset.
+- `02_Dynamic_Update_Group_Node_PGNN.ipynb`
+  - Loads the pre-trained group-node PGNN.
+  - Evaluates the pre-trained model on the ASU dataset without updating.
+  - Uses 20% of the ASU dataset for dynamic model updating.
+  - Evaluates the updated model on the remaining 80% of the ASU dataset.
 
-- "pretrained_model/group_node_PGNN_pretrained.pt"
-         - Pre-trained group-node PGNN model weights.
+- `pretrained_model/group_node_PGNN_pretrained.pt`
+  - Pre-trained group-node PGNN model weights.
 
-- "pretrained_model/preprocessing_scalers.joblib"
-         - Input and target standardization parameters used during pre-training.
+- `pretrained_model/preprocessing_scalers.joblib`
+  - Input and target standardization parameters used during pre-training.
 
-- "trained_models/group_node_PGNN_dynamic_updated.pt"
-         - Group-node PGNN model weights after dynamic updating.
+- `trained_models/group_node_PGNN_dynamic_updated.pt`
+  - Group-node PGNN model weights after dynamic updating.
 
-- "example_data/input_data_template.csv"
-         - Example template showing the required input-data format.
+- `example_data/input_data_template.csv`
+  - Example template showing the required input-data format.
 
-- "requirements.txt"
-         - Python packages required to run the notebooks.
+- `requirements.txt`
+  - Python packages required to run the notebooks.
 
 # Model architecture
 
