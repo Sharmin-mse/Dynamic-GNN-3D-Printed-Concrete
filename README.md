@@ -42,15 +42,6 @@ The group-node PGNN uses:
 - Validation-RMSE-based early stopping
 - Random seed = 42
 
-## Dynamic Updating Workflow
-
-1. Train the general group-node PGNN using the RILEM TC 304-ADC database.
-2. Save the pre-trained model weights and preprocessing parameters.
-3. Load the same pre-trained model for a new dataset.
-4. Evaluate the pre-trained model without updating as a benchmark.
-5. Use 20% of the new dataset to update the pre-trained model.
-6. Evaluate the updated model using the remaining 80% of the new dataset.
-
 ## Installation
 
 Install the required Python packages using:
