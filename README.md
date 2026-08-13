@@ -20,7 +20,7 @@ This repository provides the implementation of the group-node physics-guided gra
   - Input and target standardization parameters used during pre-training.
 
 - `trained_models/group_node_PGNN_dynamic_updated.pt`
-  - Group-node PGNN model weights after dynamic updating.
+  - Group-node PGNN model weights.
 
 - `example_input_data_template/input_data_template.csv`
   - Template showing the required input-data format.
