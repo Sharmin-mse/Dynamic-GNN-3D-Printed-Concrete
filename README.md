@@ -6,11 +6,10 @@ This repository provides the implementation of the group-node physics-guided gra
 
 - `01_Pretrain_Group_Node_PGNN.ipynb`
   - Trains the group-node PGNN using the RILEM TC 304-ADC database.
+  - Evaluates the pre-trained model on the ASU dataset without updating.
   - Saves the best pre-trained model based on validation RMSE.
 
 - `02_Dynamic_Update_Group_Node_PGNN.ipynb`
-  - Loads the pre-trained group-node PGNN.
-  - Evaluates the pre-trained model on the ASU dataset without updating.
   - Uses 20% of the ASU dataset for dynamic model updating.
   - Evaluates the updated model on the remaining 80% of the ASU dataset.
 
